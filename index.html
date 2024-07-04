@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 style="color: #FAFAFF;">To Do App</h1>
+    <div class="toDoContainer">    
+        <input class="toDoDate" id="toDoDate" type="date" onkeypress="handleEnterKey(event)" required>
+        <input class="toDoInput" id="toDoInput" type="text" onkeypress="handleEnterKey(event)" required placeholder="What will you do?...">
+        <button class="addBtn" onclick="addToDo()">Add</button>
+    </div>
+    <div  class="toDoDisplay" id="toDoDisplay">
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
